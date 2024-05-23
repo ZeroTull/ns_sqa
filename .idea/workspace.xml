@@ -4,28 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="35379cba-6725-4f14-8815-f19c99aaede8" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/ns_sqa.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/run_tests.sh" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/enums/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/enums/browsers.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/enums/dnsservers.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/enums/languages.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/enums/locators.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/helpers/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/helpers/counter.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/google_search_page.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/requestsCount/test_requests_count.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/speedTest/test_internet_connection.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/speedTest/test_page_load_time.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/speedTest/test_speed_latency.py" afterDir="false" />
+    <list default="true" id="35379cba-6725-4f14-8815-f19c99aaede8" name="Changes" comment="Initial commit">
+      <change afterPath="$PROJECT_DIR$/src/test_instance.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/helpers/counter.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/helpers/counter.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/requestsCount/test_requests_count.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/requestsCount/test_requests_count.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/speedTest/test_page_load_time.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/speedTest/test_page_load_time.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/speedTest/test_speed_latency.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/speedTest/test_speed_latency.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -42,6 +27,18 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;ZeroTull&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/ZeroTull/ns_sqa&quot;,
+    &quot;accountId&quot;: &quot;79ae2321-4242-482a-b11f-90abb40bef54&quot;
+  }
+}</component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 3
 }</component>
@@ -68,7 +65,7 @@
     "Python tests.Python tests in requestsCount.executor": "Run",
     "Python tests.Python tests in speedTest.executor": "Run",
     "Python tests.Python tests in test_1.py.executor": "Run",
-    "Python tests.Python tests in test_requests_count.py.executor": "Debug",
+    "Python tests.Python tests in test_requests_count.py.executor": "Run",
     "Python tests.Python tests in tests.executor": "Run",
     "Python tests.pytest for requestsCount.test_requests_count.executor": "Debug",
     "Python tests.pytest for requestsCount.test_requests_count.test_requests_count (1).executor": "Debug",
@@ -228,9 +225,8 @@
       <list>
         <item itemvalue="Python tests.Python tests in test_requests_count.py" />
         <item itemvalue="Shell Script.run_tests.sh" />
-        <item itemvalue="Python tests.Python tests in tests" />
         <item itemvalue="Python tests.pytest for requestsCount.test_requests_count.test_requests_count" />
-        <item itemvalue="Python tests.pytest for requestsCount.test_requests_count.test_requests_count (3)" />
+        <item itemvalue="Python tests.Python tests in tests" />
       </list>
     </recent_temporary>
   </component>
@@ -253,19 +249,33 @@
       <workItem from="1715937354781" duration="8563000" />
       <workItem from="1716194555331" duration="38244000" />
       <workItem from="1716367843077" duration="7719000" />
-      <workItem from="1716376060099" duration="4433000" />
+      <workItem from="1716376060099" duration="6021000" />
+      <workItem from="1716449236104" duration="324000" />
     </task>
+    <task id="LOCAL-00001" summary="Initial commit">
+      <option name="closed" value="true" />
+      <created>1716381310358</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1716381310358</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Initial commit" />
+    <option name="LAST_COMMIT_MESSAGE" value="Initial commit" />
+  </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/ns_sqa$pytest_for_requestsCount_test_requests_count_test_requests_count__2_.coverage" NAME="pytest for requestsCount.test_requests_count.test_requests_count (2) Coverage Results" MODIFIED="1716379314165" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tests" />
     <SUITE FILE_PATH="coverage/ns_sqa$pytest_for_requestsCount_test_requests_count_test_requests_count__1_.coverage" NAME="pytest for requestsCount.test_requests_count.test_requests_count (1) Coverage Results" MODIFIED="1716378978146" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tests" />
-    <SUITE FILE_PATH="coverage/ns_sqa$pytest_for_requestsCount_test_requests_count_test_requests_count.coverage" NAME="pytest for requestsCount.test_requests_count.test_requests_count Coverage Results" MODIFIED="1716379602530" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tests" />
+    <SUITE FILE_PATH="coverage/ns_sqa$pytest_for_requestsCount_test_requests_count_test_requests_count.coverage" NAME="pytest for requestsCount.test_requests_count.test_requests_count Coverage Results" MODIFIED="1716381985279" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tests" />
     <SUITE FILE_PATH="coverage/ns_sqa$pytest_for_requestsCount_test_requests_count.coverage" NAME="pytest for requestsCount.test_requests_count Coverage Results" MODIFIED="1716378782904" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tests" />
-    <SUITE FILE_PATH="coverage/ns_sqa$.coverage" NAME=" Coverage Results" MODIFIED="1716380064047" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tests" />
+    <SUITE FILE_PATH="coverage/ns_sqa$.coverage" NAME=" Coverage Results" MODIFIED="1716449456466" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tests" />
     <SUITE FILE_PATH="coverage/ns_sqa$pytest_for_requestsCount_test_requests_count_test_requests_count__3_.coverage" NAME="pytest for requestsCount.test_requests_count.test_requests_count Coverage Results" MODIFIED="1716379504668" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/tests" />
   </component>
 </project>

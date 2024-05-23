@@ -1,13 +1,12 @@
 import pytest
 import allure
 import speedtest
-
-DNS_SERVERS = ['8.8.8.8', '8.8.4.4', '1.1.1.1', '1.0.0.1']
+from src.enums.dnsservers import DnsServers
 
 
 @allure.feature("Network Performance")
 @allure.story("Speed and Latency Test")
-@pytest.mark.parametrize("dns_server", DNS_SERVERS)
+@pytest.mark.parametrize("dns_server", DnsServers.DNS_SERVERS)
 def test_perform_speed_latency(dns_server):
     with allure.step(f"Initialize Speedtest with DNS server {dns_server}"):
         st = speedtest.Speedtest()

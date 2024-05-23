@@ -1,3 +1,5 @@
+import time
+
 import allure
 from playwright.async_api import Page
 
@@ -13,6 +15,6 @@ def count_requests_by_type(request, request_counter: {}):
 class Counter:
     @staticmethod
     def count_requests_for_page(page: Page, request_counter: {}):
+        time.sleep(0.5)
         with allure.step(f'Count requests for {page.title()} page'):
             page.on("request", lambda request: count_requests_by_type(request, request_counter))
-            page.wait_for_load_state("networkidle")

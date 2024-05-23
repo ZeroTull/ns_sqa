@@ -1,11 +1,11 @@
 import allure
 import pytest
-from playwright.sync_api import sync_playwright
 
 from src.pages.google_search_page import GoogleSearchPage
 from src.enums.locators import GoogleLocators
 from src.enums.browsers import Browser_Types
 from src.helpers.counter import Counter
+from src.test_instance import playwright_context
 
 # Dictionaries to store requests counts by type
 google_request_counter = {}
@@ -13,24 +13,6 @@ first_result_request_counter = {}
 target_page_request_counter = {}
 SEARCH_VALUE = "name"
 English = "en-US"
-
-
-@pytest.fixture(scope="module")
-def playwright_context(request):
-    with sync_playwright() as p:
-        if request.param == 'chromium':
-            browser = p.chromium.launch(headless=False)
-        elif request.param == 'firefox':
-            browser = p.firefox.launch(headless=False)
-        elif request.param == 'webkit':
-            browser = p.webkit.launch(headless=False)
-        else:
-            raise ValueError(f"Unsupported browser type: {request.param}")
-
-        context = browser.new_context()
-        # Set a global timeout of 10 seconds for all actions
-        context.set_default_timeout(10000)
-        yield context
 
 
 @allure.feature('Google Search')

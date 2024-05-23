@@ -2,13 +2,12 @@ import pytest
 import allure
 from time import time
 from playwright.sync_api import Page
-
-DNS_SERVERS = ['8.8.8.8', '8.8.4.4', '1.1.1.1', '1.0.0.1']
+from src.enums.dnsservers import DnsServers
 
 
 @allure.feature("Web Performance")
 @allure.story("Page Load Time Test")
-@pytest.mark.parametrize("dns_server", DNS_SERVERS)
+@pytest.mark.parametrize("dns_server", DnsServers.DNS_SERVERS)
 def test_page_load_time(dns_server, page: Page):
     with allure.step(f"Go to Google homepage using DNS server {dns_server}"):
         page.goto("https://www.google.com")
