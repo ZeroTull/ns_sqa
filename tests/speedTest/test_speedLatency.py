@@ -1,7 +1,8 @@
 import pytest
 import allure
 import speedtest
-from src.enums.dnsservers import DnsServers
+
+from src.enums.DnsServers import DnsServers
 
 
 @allure.feature("Network Performance")

@@ -1,3 +1,2 @@
-
-class Browser_Types:
+class BrowserTypes:
     BROWSER_TYPES = ['chromium', 'firefox', 'webkit']

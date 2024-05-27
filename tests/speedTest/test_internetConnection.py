@@ -1,7 +1,7 @@
 import http.client as httplib
 import pytest
 
-from src.enums.dnsservers import DnsServers
+from src.enums.DnsServers import DnsServers
 
 
 @pytest.mark.parametrize("dns_server", DnsServers.DNS_SERVERS)

@@ -1,7 +1,6 @@
 #!/bin/bash
 
 # Define the directories for tests, Allure results, and Allure reports
-# TESTS_DIR="ns_sqa/tests"
 
 ALLURE_RESULTS_DIR="src/allure-results"
 ALLURE_REPORT_DIR="src/allure-report"
@@ -18,4 +17,3 @@ allure generate $ALLURE_RESULTS_DIR --clean -o $ALLURE_REPORT_DIR
 
 # Open the Allure report
 allure open $ALLURE_REPORT_DIR
-

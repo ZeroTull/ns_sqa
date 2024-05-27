@@ -2,7 +2,8 @@ import pytest
 import allure
 from time import time
 from playwright.sync_api import Page
-from src.enums.dnsservers import DnsServers
+
+from src.enums.DnsServers import DnsServers
 
 
 @allure.feature("Web Performance")
