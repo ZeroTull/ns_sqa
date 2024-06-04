@@ -16,7 +16,7 @@ English = "en-US"
 
 @allure.feature('Google Search')
 @allure.story('Count requests per page')
-@pytest.mark.parametrize("playwright_context", BrowserTypes.BROWSER_TYPES, indirect=True)
+@pytest.mark.parametrize("playwright_context", [bt.value for bt in BrowserTypes], indirect=True)
 def test_requests_count(playwright_context):
     (GoogleSearchPage.go_to_google_search_page(playwright_context.new_page())
      .select_language_and_accept_cookies(English)
@@ -37,7 +37,7 @@ def test_requests_count(playwright_context):
     return google_request_counter, first_result_request_counter, target_page_request_counter
 
 
-def print_results_by_type(counter={}, message=""):
+def print_results_by_type(counter: {}, message: str):
     with allure.step(f'\nPrint {message}'):
         print(f"\n{message}")
     for resource_type, count in counter.items():

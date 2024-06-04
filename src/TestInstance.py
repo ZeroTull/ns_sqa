@@ -1,15 +1,17 @@
 import pytest
 from playwright.sync_api import sync_playwright
 
+from src.enums.BrowserTypes import BrowserTypes
+
 
 @pytest.fixture(scope="module")
 def playwright_context(request):
     with sync_playwright() as p:
-        if request.param == 'chromium':
+        if request.param == BrowserTypes.CHROMIUM.value:
             browser = p.chromium.launch(headless=False)
-        elif request.param == 'firefox':
+        elif request.param == BrowserTypes.FIREFOX.value:
             browser = p.firefox.launch(headless=False)
-        elif request.param == 'webkit':
+        elif request.param == BrowserTypes.WEBKIT.value:
             browser = p.webkit.launch(headless=False)
         else:
             raise ValueError(f"Unsupported browser type: {request.param}")
