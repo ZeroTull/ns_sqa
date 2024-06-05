@@ -1,6 +1,7 @@
 import pytest
 import allure
 import speedtest
+import dns.resolver
 
 from src.enums.DnsServers import DnsServers
 
@@ -10,6 +11,7 @@ from src.enums.DnsServers import DnsServers
 @pytest.mark.parametrize("dns_server", DnsServers.DNS_SERVERS)
 def test_perform_speed_latency(dns_server):
     with allure.step(f"Initialize Speedtest with DNS server {dns_server}"):
+        set_dns_server(dns_server)
         st = speedtest.Speedtest()
 
     with allure.step("Perform download and upload test"):
@@ -34,3 +36,10 @@ def test_perform_speed_latency(dns_server):
         print("Download Speed: {:.2f} Mbps".format(download_speed))
         print("Upload Speed: {:.2f} Mbps".format(upload_speed))
         print("Latency: {:.2f} ms".format(latency))
+
+
+def set_dns_server(dns_server):
+    """Set the DNS server."""
+    resolver = dns.resolver.Resolver()
+    resolver.nameservers = [dns_server]
+    dns.resolver.default_resolver = resolver
